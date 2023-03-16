@@ -19,9 +19,8 @@ body {
 #app { display: flex; justify-content: center }
 
 h1 { margin: 0; font-family: "Liberation Sans Bold"; font-size: 48px }
-.logo h1 { line-height: 0.8 }
 
-
+a { color: inherit }
 a:hover { color: #fff }
 a:active { color: var(--accent-2) }
 
@@ -45,7 +44,6 @@ main {
 	border-right: 4px solid #fff;
 	box-shadow: inset 0 0 24px 0px #000;
 	text-align: center;
-	white-space: break-spaces;
 }
 main > * {
 	filter: drop-shadow(0 2px 0 #000);
@@ -105,6 +103,7 @@ button.heart:active { scale: 1 }
 	padding: 12px 24px;
 	border: 2px solid var(--accent-1);
 	border-radius: 8px;
+	white-space: break-spaces;
 }
 .percentage h1 {
 	display: flex;

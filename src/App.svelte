@@ -30,8 +30,8 @@
 </script>
 
 <main>
-	<div class="logo">
-		<h1>❤️<br>lovecalc</h1>
+	<div>
+		<img src="/img/logo.svg"><br>
 		<span class="tinted-text">calculate the percentage how much one loves the other!</span>
 	</div>
 
@@ -47,8 +47,8 @@
 	{#if percentage !== undefined}
 		<div class="percentage">
 			<span>{@html loveText}</span>
-			<h1><img src={`/icon/${loveIcon}.png`} height="48">{percentage}%</h1>
-			<span>placeholder text</span>
+			<h1><img src={`/img/icon/${loveIcon}.png`} height="48">{percentage}%</h1>
+			<!--<span>placeholder text</span>-->
 		</div>
 	{:else}
 
@@ -56,5 +56,9 @@
 
 	<sub class="tinted-text"><i><b>NOTICE:</b> lovecalc <b>DOES NOT</b> provide accurate results when comparing with the real world, even if they seem to be "subjectively or objectively" accurate. lovecalc is not responsible for any breakdown of social interactions, or relationships.</i></sub>
 
-	<sub><a class="tinted-text" href="https://macimas.github.io">created by macimas<br>last updated on March 16, 2023</a></sub>
+	<sub class="tinted-text">
+		<a href="https://macimas.github.io">created by macimas</a> • last updated on March 16, 2023
+		<br>
+		<a href="https://fonts.google.com/noto/specimen/Noto+Color+Emoji">emojis stolen from Noto Color Emoji</a>
+	</sub>
 </main>
